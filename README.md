@@ -1,3 +1,4 @@
+# SCURRI
 ##Herein lies two simple quizzes
 
 ####Fizzbuzz
@@ -9,3 +10,4 @@ To exectute, make sure you have python installed and run `python fizzbuzz.py`
 This script takes a phone number and returns a status indicating if it is a valid UK number or not. To use, run the command `python directory.py <<phone number>>/test`
 
 To run these scripts, simply clone the repo and run the scripts
+=======
