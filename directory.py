@@ -20,7 +20,7 @@ if __name__ == "__main__":
 		arg = sys.argv[1]
 	except:
 		print "Please supply a postal address or the word 'test'"
-		sys.exit(-1)
+		sys.exit()
 
 
 	if arg.lower() == 'test':
