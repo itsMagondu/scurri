@@ -4,8 +4,9 @@ import sys
 import re
 
 def match(address):
-
-	if not re.match(r'^(([gG][iI][rR] {0,}0[aA]{2})|((([a-pr-uwyzA-PR-UWYZ][a-hk-yA-HK-Y]?[0-9][0-9]?)|(([a-pr-uwyzA-PR-UWYZ][0-9][a-hjkstuwA-HJKSTUW])|([a-pr-uwyzA-PR-UWYZ][a-hk-yA-HK-Y][0-9][abehmnprv-yABEHMNPRV-Y]))) {0,}[0-9][abd-hjlnp-uw-zABD-HJLNP-UW-Z]{2}))$',address):
+	if not re.match(r'^(([gG][iI][rR] {0,}0[aA]{2})|((([a-pr-uwyzA-PR-UWYZ][a-hk-yA-HK-Y]?[0-9][0-9]?)|'
+                        r'(([a-pr-uwyzA-PR-UWYZ][0-9][a-hjkstuwA-HJKSTUW])|([a-pr-uwyzA-PR-UWYZ][a-hk-yA-HK-Y][0-9]'
+                        r'[abehmnprv-yABEHMNPRV-Y]))) {0,}[0-9][abd-hjlnp-uw-zABD-HJLNP-UW-Z]{2}))$',address):
 		print "Failed. '%s' is NOT a valid postal address" %address
 	else:
 		print "Success. '%s' is a valid postal address" %address
@@ -20,7 +21,7 @@ if __name__ == "__main__":
 		arg = sys.argv[1]
 	except:
 		print "Please supply a postal address or the word 'test'"
-		sys.exit(-1)
+		sys.exit()
 
 
 	if arg.lower() == 'test':

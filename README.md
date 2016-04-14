@@ -1,5 +1,5 @@
 # SCURRI
-##Herein lies two simple quizzes
+##Herein lies two simple scripts.
 
 ####Fizzbuzz
 This script prints numbers with the exception of multiples of 3,5,3 and 5 where it outputs "three","five" or "threefive" respectively.
